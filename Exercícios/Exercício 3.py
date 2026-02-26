@@ -18,8 +18,14 @@ elif (Operation == '*'):
 
 elif (Operation == '/'):
 
-    print(x/y)
+    if y != 0:
+
+        print(x/y)
+
+    else:
+
+        print('Erro Desconhecido: Divisão por zero é impossível.')
 
 else:
 
-    print('Operação inválida e/ou indisponível.')
+  print('Operação inválida e/ou indisponível.')
