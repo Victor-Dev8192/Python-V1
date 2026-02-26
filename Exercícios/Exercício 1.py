@@ -1,3 +1,3 @@
-nom = input ('Qual é o seu nome?')
+nom = input ('Qual é o seu nome? ')
 
-print('Bem-vindo ', nom,'!')
+print('Bem-vindo', nom)
