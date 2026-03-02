@@ -18,17 +18,7 @@ elif (Operation == '*' or 'Multi'):
 
     print(x*y)
 
-elif (Operation == '/' or 'Diviz'):
-
-    if y != 0:
-
-        print(x/y)
-
-    else:
-
-        print('Erro Desconhecido: Divisão por zero é impossível.')
-
-if (Operation == '^' or Operation == 'Power'):
+elif (Operation == '^' or Operation == 'Power'):
 
     print(m.pow(x,y))
 
@@ -43,6 +33,16 @@ elif (Operation == '!' or Operation == 'Factorial'):
 elif (Operation == '?' or 'Termial'):
 
     print(x*(x+1)/2)
+
+elif (Operation == '/' or 'Diviz'):
+
+    if y != 0:
+
+        print(x/y)
+
+    else:
+
+        print('Erro Desconhecido: Divisão por zero é impossível.')
 
 else:
 
