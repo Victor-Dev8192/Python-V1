@@ -1,8 +1,8 @@
 import math as m
 
-x = int(input('Primeiro valor? '))
+x = int(input('Primeiro valor? (Se aplica a operações como Fatorial e Termial.) '))
 
-y = int(input('Segundo valor? '))
+y = int(input('Segundo valor? (Não se aplica a operações como Fatorial e Termial.) '))
 
 Operation = input('Qual operação? (+,-,*,/, ^, √, !, ?, Nome encurtado da operação.) ')
 
@@ -28,17 +28,17 @@ elif (Operation == '/' or 'Diviz'):
 
         print('Erro Desconhecido: Divisão por zero é impossível.')
 
-if (Operation == '^' or 'Power'):
+if (Operation == '^' or Operation == 'Power'):
 
-    print(x.m.power(y))
+    print(m.pow(x,y))
 
-elif (Operation == '√' or 'Root'):
+elif (Operation == '√' or Operation == 'Root'):
 
-    print(x.m.sqrt(y))
+    print(m.sqrt(x,y))
 
-elif (Operation == '!' or 'Factorial'):
+elif (Operation == '!' or Operation == 'Factorial'):
 
-    print(x.m.factorial)
+    print(m.factorial(x))
 
 elif (Operation == '?' or 'Termial'):
 
