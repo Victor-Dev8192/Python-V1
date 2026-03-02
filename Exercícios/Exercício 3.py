@@ -6,35 +6,35 @@ y = int(input('Segundo valor? (Não se aplica a operações como Fatorial e Term
 
 Operation = input('Qual operação? (+,-,*,/, ^, √, !, ?, Nome encurtado da operação.) ')
 
-if (Operation == '+' or 'Add'):
+if (Operation == '+'):
 
     print(x+y)
 
-elif (Operation == '-' or 'Minus'):
+elif (Operation == '-'):
 
     print(x-y)
 
-elif (Operation == '*' or 'Multi'):
+elif (Operation == '*'):
 
     print(x*y)
 
-elif (Operation == '^' or Operation == 'Power'):
+elif (Operation == '^'):
 
     print(m.pow(x,y))
 
-elif (Operation == '√' or Operation == 'Root'):
+elif (Operation == '√'):
 
     print(m.sqrt(x,y))
 
-elif (Operation == '!' or Operation == 'Factorial'):
+elif (Operation == '!'):
 
     print(m.factorial(x))
 
-elif (Operation == '?' or 'Termial'):
+elif (Operation == '?'):
 
     print(x*(x+1)/2)
 
-elif (Operation == '/' or 'Diviz'):
+elif (Operation == '/'):
 
     if y != 0:
 
