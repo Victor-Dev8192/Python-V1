@@ -36,7 +36,7 @@ elif (Operation == '?'):
 
 elif (Operation == 'OR'):
 
-    print(x=y)
+    print(x==y)
 
 elif (Operation == 'NOR'):
 
