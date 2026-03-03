@@ -1,10 +1,10 @@
 import math as m
 
-x = int(input('Primeiro valor? (Se aplica a operações como Fatorial e Termial.) '))
+x = float(input('Primeiro valor? (Se aplica a operações como Fatorial e Termial.) '))
 
-y = int(input('Segundo valor? (Não se aplica a operações como Fatorial e Termial.) '))
+y = float(input('Segundo valor? (Não se aplica a operações como Fatorial e Termial.) '))
 
-Operation = input('Qual operação? (+,-,*,/, ^, √, !, ?, Nome encurtado da operação.) ')
+Operation = input('Qual operação? (+,-,*,/, ^, Root, !, ?, OR, NOR) ')
 
 if (Operation == '+'):
 
@@ -22,7 +22,7 @@ elif (Operation == '^'):
 
     print(m.pow(x,y))
 
-elif (Operation == '√'):
+elif (Operation == 'Root'):
 
     print(m.sqrt(x,y))
 
@@ -33,6 +33,14 @@ elif (Operation == '!'):
 elif (Operation == '?'):
 
     print(x*(x+1)/2)
+
+elif (Operation == 'OR'):
+
+    print(x=y)
+
+elif (Operation == 'NOR'):
+
+    print(x!=y)
 
 elif (Operation == '/'):
 
