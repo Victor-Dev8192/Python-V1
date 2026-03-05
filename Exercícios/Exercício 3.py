@@ -4,7 +4,7 @@ x = float(input('Primeiro valor? (Se aplica a operações como Fatorial e Termia
 
 y = float(input('Segundo valor? (Não se aplica a operações como Fatorial e Termial.) '))
 
-Operation = input('Qual operação? (+,-,*,/, ^, Root, !, ?, OR, NOR) ')
+Operation = input('Qual operação? (+,-,*,/, ^, Root, !, ?, =, Diff) ')
 
 if (Operation == '+'):
 
@@ -34,11 +34,11 @@ elif (Operation == '?'):
 
     print(x*(x+1)/2)
 
-elif (Operation == 'OR'):
+elif (Operation == '='):
 
     print(x==y)
 
-elif (Operation == 'NOR'):
+elif (Operation == 'Diff'):
 
     print(x!=y)
 
