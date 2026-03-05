@@ -4,7 +4,7 @@ x = float(input(f'Primeiro valor? (Se aplica a operações como Fatorial e Termi
 
 y = float(input(f'Segundo valor? (Não se aplica a operações como Fatorial e Termial.) '))
 
-Op = input(f'Qual operação? (+,-,*,/, ^, Root, !, ?, =, Diff) ')
+Op = input(f'Qual operação? (+,-,*,/, ^, Root, !, ?, =, Diff) ').strip().capitalize()
 
 match Op:
 
