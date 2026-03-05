@@ -20,6 +20,16 @@ match Op:
 
      print(x*y)
 
+    case '/':
+
+      if y != 0:
+
+        print(x/y)
+
+      else:
+
+        print(f'Erro 2: Divisão por zero é impossível.')
+
     case '^':
 
      print(m.pow(x,y))
@@ -59,16 +69,6 @@ match Op:
     case 'Diff':
 
      print(x!=y)
-
-    case '/':
-
-      if y != 0:
-
-        print(x/y)
-
-      else:
-
-        print(f'Erro 2: Divisão por zero é impossível.')
 
     case _:
 
