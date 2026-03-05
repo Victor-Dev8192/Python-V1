@@ -37,7 +37,7 @@ match Op:
 
      else:
      
-      print(f'Erro 1: Fatorial de 0 e/ou números negativos é impossível.')
+      print(f'Erro 1: Fatorial de números negativos é impossível.')
 
      if y >= 0:
        
@@ -45,7 +45,7 @@ match Op:
 
      else:
       
-      print(f'Erro 1: Fatorial de 0 e/ou números negativos é impossível.')
+      print(f'Erro 1: Fatorial de números negativos é impossível.')
 
     case '?':
 
