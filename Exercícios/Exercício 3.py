@@ -4,48 +4,48 @@ x = float(input('Primeiro valor? (Se aplica a operações como Fatorial e Termia
 
 y = float(input('Segundo valor? (Não se aplica a operações como Fatorial e Termial.) '))
 
-Operation = input('Qual operação? (+,-,*,/, ^, Root, !, ?, =, Diff) ')
+Op = input('Qual operação? (+,-,*,/, ^, Root, !, ?, =, Diff) ')
 
-if (Operation == '+'):
+if (Op == '+'):
 
     print(x+y)
 
-elif (Operation == '-'):
+elif (Op == '-'):
 
     print(x-y)
 
-elif (Operation == '*'):
+elif (Op == '*'):
 
     print(x*y)
 
-elif (Operation == '^'):
+elif (Op == '^'):
 
     print(m.pow(x,y))
 
-elif (Operation == 'Root'):
+elif (Op == 'Root'):
 
     print(m.sqrt(int(x)))
     print(m.sqrt(int(y)))
 
-elif (Operation == '!'):
+elif (Op == '!'):
 
     print(m.factorial(int(x)))
     print(m.factorial(int(y)))
 
-elif (Operation == '?'):
+elif (Op == '?'):
 
     print(int(x)*(int(x)+1)/2)
     print(int(y)*(int(y)+1)/2)
 
-elif (Operation == '='):
+elif (Op == '='):
 
     print(x==y)
 
-elif (Operation == 'Diff'):
+elif (Op == 'Diff'):
 
     print(x!=y)
 
-elif (Operation == '/'):
+elif (Op == '/'):
 
     if y != 0:
 
