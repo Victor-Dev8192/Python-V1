@@ -1,60 +1,75 @@
 import math as m
 
-x = float(input('Primeiro valor? (Se aplica a operações como Fatorial e Termial.) '))
+x = float(input(f'Primeiro valor? (Se aplica a operações como Fatorial e Termial.) '))
 
-y = float(input('Segundo valor? (Não se aplica a operações como Fatorial e Termial.) '))
+y = float(input(f'Segundo valor? (Não se aplica a operações como Fatorial e Termial.) '))
 
-Op = input('Qual operação? (+,-,*,/, ^, Root, !, ?, =, Diff) ')
+Op = input(f'Qual operação? (+,-,*,/, ^, Root, !, ?, =, Diff) ')
 
-if (Op == '+'):
+match Op:
 
-    print(x+y)
+    case '+':
 
-elif (Op == '-'):
+      print(x+y)
 
-    print(x-y)
+    case '-':
 
-elif (Op == '*'):
+      print(x-y)
 
-    print(x*y)
+    case '*':
 
-elif (Op == '^'):
+     print(x*y)
 
-    print(m.pow(x,y))
+    case '^':
 
-elif (Op == 'Root'):
+     print(m.pow(x,y))
 
-    print(m.sqrt(int(x)))
-    print(m.sqrt(int(y)))
+    case 'Root':
 
-elif (Op == '!'):
+     print(m.sqrt(int(x)))
+     print(m.sqrt(int(y)))
 
-    print(m.factorial(int(x)))
-    print(m.factorial(int(y)))
+    case '!':
 
-elif (Op == '?'):
+     if x >= 0:
 
-    print(int(x)*(int(x)+1)/2)
-    print(int(y)*(int(y)+1)/2)
+      print(m.factorial(int(x)))
 
-elif (Op == '='):
+     else:
+     
+      print(f'Erro 1: Fatorial de 0 e/ou números negativos é impossível.')
 
-    print(x==y)
+     if y >= 0:
+       
+      print(m.factorial(int(y)))
 
-elif (Op == 'Diff'):
+     else:
+      
+      print(f'Erro 1: Fatorial de 0 e/ou números negativos é impossível.')
 
-    print(x!=y)
+    case '?':
 
-elif (Op == '/'):
+     print(int(x)*(int(x)+1)/2)
+     print(int(y)*(int(y)+1)/2)
 
-    if y != 0:
+    case '=':
+
+     print(x==y)
+
+    case 'Diff':
+
+     print(x!=y)
+
+    case '/':
+
+      if y != 0:
 
         print(x/y)
 
-    else:
+      else:
 
-        print('Erro Desconhecido: Divisão por zero é impossível.')
+        print(f'Erro 2: Divisão por zero é impossível.')
 
-else:
+    case _:
 
-  print('Operação inválida e/ou indisponível.')
+     print(f'Erro 3: Operação inválida e/ou indisponível.')
