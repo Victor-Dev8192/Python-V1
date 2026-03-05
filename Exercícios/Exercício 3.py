@@ -24,15 +24,18 @@ elif (Operation == '^'):
 
 elif (Operation == 'Root'):
 
-    print(m.sqrt(x,y))
+    print(m.sqrt(int(x)))
+    print(m.sqrt(int(y)))
 
 elif (Operation == '!'):
 
-    print(m.factorial(x))
+    print(m.factorial(int(x)))
+    print(m.factorial(int(y)))
 
 elif (Operation == '?'):
 
-    print(x*(x+1)/2)
+    print(int(x)*(int(x)+1)/2)
+    print(int(y)*(int(y)+1)/2)
 
 elif (Operation == '='):
 
