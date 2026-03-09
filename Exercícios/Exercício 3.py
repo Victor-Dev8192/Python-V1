@@ -32,7 +32,7 @@ match Op:
 
     case '^':
 
-     print(m.pow(x,y))
+     print(x**y)
 
     case 'Root':
 
