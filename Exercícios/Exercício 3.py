@@ -74,7 +74,7 @@ while True:
 
     case "Exit" | 'Sair' | 'E' | 'S':
    
-     print(f'')
+     print(f'Encerrando...')
      break
 
     case _:
