@@ -1,18 +1,20 @@
 import math as m
 
-x = float(input(f'Primeiro valor? (Se aplica a operações como Fatorial e Termial.) '))
+while True:
 
-y = float(input(f'Segundo valor? (Não se aplica a operações como Fatorial e Termial.) '))
+ x = float(input(f'Primeiro valor? (Se aplica a operações como Fatorial e Termial.) '))
 
-Op = input(f'Qual operação? (+,-,*,/, ^, Root, !, ?, =, Diff) ').strip().capitalize()
+ y = float(input(f'Segundo valor? (Não se aplica a operações como Fatorial e Termial.) '))
 
-match Op:
+ Op = input(f'Qual operação? (+,-,*,/, ^, Root, !, ?, =, Diff) ').capitalize().strip()
 
-    case '+':
+ match Op:
+
+    case '+' | 'Add' | 'Mais' | 'A' | 'M':
 
       print(x+y)
 
-    case '-':
+    case '-' | 'Minus' | 'Menos' | 'M':
 
       print(x-y)
 
@@ -34,12 +36,12 @@ match Op:
 
      print(x**y)
 
-    case 'Root':
+    case 'R' | 'Root' | 'Raiz':
 
      print(m.sqrt(int(x)))
      print(m.sqrt(int(y)))
 
-    case '!':
+    case '!' | 'Factorial' | 'Fatorial':
 
      if x >= 0:
 
@@ -57,18 +59,23 @@ match Op:
       
       print(f'Erro 1: Fatorial de números negativos é impossível.')
 
-    case '?':
+    case '?' | 'Termial':
 
      print(int(x)*(int(x)+1)/2)
      print(int(y)*(int(y)+1)/2)
 
-    case '=':
+    case '=' | 'Igual' | 'I':
 
      print(x==y)
 
-    case 'Diff':
+    case 'Diff' | 'D':
 
      print(x!=y)
+
+    case "Exit" | 'Sair' | 'E' | 'S':
+   
+     print(f'')
+     break
 
     case _:
 
