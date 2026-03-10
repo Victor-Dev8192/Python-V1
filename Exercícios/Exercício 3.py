@@ -68,7 +68,7 @@ while True:
 
      print(x==y)
 
-    case 'Diferença' | 'Diff' | 'D':
+    case 'Diferença' | 'DIferente' | 'Diff' | 'D':
 
      print(x!=y)
 
