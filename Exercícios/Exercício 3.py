@@ -18,11 +18,11 @@ while True:
 
       print(x-y)
 
-    case '*':
+    case '*' | 'Multi' | 'M':
 
      print(x*y)
 
-    case '/':
+    case '/' | 'Division' | 'Divisão' | 'D':
 
       if y != 0:
 
@@ -32,7 +32,7 @@ while True:
 
         print(f'Erro 2: Divisão por zero é impossível.')
 
-    case '^':
+    case '^' | 'Exponenciação' | 'Exponente' | 'Exponent' | 'e':
 
      print(x**y)
 
@@ -41,7 +41,7 @@ while True:
      print(m.sqrt(int(x)))
      print(m.sqrt(int(y)))
 
-    case '!' | 'Factorial' | 'Fatorial':
+    case '!' | 'Factorial' | 'Fatorial' | 'F':
 
      if x >= 0:
 
@@ -59,16 +59,16 @@ while True:
       
       print(f'Erro 1: Fatorial de números negativos é impossível.')
 
-    case '?' | 'Termial':
+    case '?' | 'Termial' | 'T':
 
      print(int(x)*(int(x)+1)/2)
      print(int(y)*(int(y)+1)/2)
 
-    case '=' | 'Igual' | 'I':
+    case '=' | 'Equal' | 'Igual' | 'E' | 'I':
 
      print(x==y)
 
-    case 'Diff' | 'D':
+    case 'Diferença' | 'Diff' | 'D':
 
      print(x!=y)
 
