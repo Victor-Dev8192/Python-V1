@@ -2,9 +2,9 @@ import math as m
 
 while True:
 
- x = float(input(f'Primeiro valor? (Se aplica a operações como Fatorial e Termial.) '))
+ x = float(input(f'Primeiro valor? (Se aplica a operações como Fatorial e Termial.) ').strip())
 
- y = float(input(f'Segundo valor? (Não se aplica a operações como Fatorial e Termial.) '))
+ y = float(input(f'Segundo valor? (Não se aplica a operações como Fatorial e Termial.) ').strip())
 
  Op = input(f'Qual operação? (+,-,*,/, ^, Root, !, ?, =, Diff) ').capitalize().strip()
 
