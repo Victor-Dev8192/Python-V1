@@ -30,7 +30,7 @@ while True:
 
       else:
 
-        print(f'Erro 2: Divisão por zero é impossível.')
+        print(f'Erro 1: Divisão por zero é impossível.')
 
     case '^' | 'Exponenciação' | 'Exponente' | 'Exponent' | 'Ex':
 
@@ -49,7 +49,7 @@ while True:
 
      else:
      
-      print(f'Erro 1: Fatorial de números negativos é impossível.')
+      print(f'Erro 2: Fatorial de números negativos é impossível.')
 
      if y >= 0:
        
@@ -57,7 +57,7 @@ while True:
 
      else:
       
-      print(f'Erro 1: Fatorial de números negativos é impossível.')
+      print(f'Erro 2: Fatorial de números negativos é impossível.')
 
     case '?' | 'Termial' | 'T':
 
