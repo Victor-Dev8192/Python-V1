@@ -22,7 +22,7 @@ while True:
 
      print(x*y)
 
-    case '/' | 'Division' | 'Divisão' | 'D':
+    case '/' | 'Division' | 'Divisão' | 'Diviz' | 'D':
 
       if y != 0:
 
