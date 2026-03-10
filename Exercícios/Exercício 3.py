@@ -32,7 +32,7 @@ while True:
 
         print(f'Erro 1: Divisão por zero é impossível.')
 
-    case '^' | 'Exponenciação' | 'Exponente' | 'Exponent' | 'Ex':
+    case '^' | 'Exponenciação' | 'Exponente' | 'Power' | 'Ex' | 'P':
 
      print(x**y)
 
