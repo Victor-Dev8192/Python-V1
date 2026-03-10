@@ -18,7 +18,7 @@ while True:
 
       print(x-y)
 
-    case '*' | 'Multi' | 'M':
+    case '*' | 'Multiplicação' | 'Multiplication' | 'Multi' | 'M':
 
      print(x*y)
 
