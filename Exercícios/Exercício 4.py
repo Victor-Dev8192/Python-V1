@@ -1,2 +1,2 @@
-x = float(input('Digite um valor númerico aleatório para converter em metros, centímetros e milímetros: '))
+x = float(input('Digite um número aleatório em metros: '))
 print('Metros = {} | Centímetros = {} | Milímetros = {}'.format(x, x*100, x*1000))
