@@ -1,4 +1,5 @@
 while True:
+ 
  h = float(input('Altura da parede? '))
 
  w = float(input('Largura da parede? '))
