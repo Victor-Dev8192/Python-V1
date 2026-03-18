@@ -1,7 +1,10 @@
-day = input ('Dia? ')
+while True:
+ 
+ day = input ('Dia? ')
 
-month = input ('Mês? ')
+ month = input ('Mês? ')
 
-year = input ('Ano? ')
+ year = input ('Ano? ')
 
-print(day,month,year)
+ print(day,month,year)
+ print('Reiniciando...')

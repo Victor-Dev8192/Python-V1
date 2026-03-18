@@ -1,3 +1,6 @@
-nom = input ('Qual é o seu nome? ')
+while True:
 
-print('Bem-vindo {}!'.format(nom))
+ name = input ('Qual é o seu nome? ')
+
+ print('Bem-vindo {}!'.format(name))
+ print('Reiniciando...')
