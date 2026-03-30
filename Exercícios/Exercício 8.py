@@ -1,7 +1,9 @@
-CA = input (float(f'Valor do Cateto Adjacente: ')).strip()
+while True:
 
-CO = input(float(f'Valor do Cateto Oposto: ')).strip()
+ CA = input (float(f'Valor do Cateto Adjacente: ')).strip()
 
-H = (CA**2)+(CO**2)
+ CO = input(float(f'Valor do Cateto Oposto: ')).strip()
 
-print('Hipotenusa = {:.2f}'.format(H))
+ H = (CA**2)+(CO**2)
+
+ print('Hipotenusa = {:.2f}'.format(H))
