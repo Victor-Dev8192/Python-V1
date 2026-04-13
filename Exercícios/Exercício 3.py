@@ -10,12 +10,12 @@ while True:
 
  match Op:
 
-    case '+' | 'Add' | 'Mais' | 'A' | 'M':
+    case '+' | 'Add' | 'Mais' | 'A' | 'M+':
 
       print(x+y)
       print('Reiniciando...')
 
-    case '-' | 'Minus' | 'Menos' | 'M':
+    case '-' | 'Minus' | 'Menos' | 'M-':
 
       print(x-y)
       print('Reiniciando...')
@@ -25,7 +25,7 @@ while True:
      print(x*y)
      print('Reiniciando...')
 
-    case '/' | 'Division' | 'Divisão' | 'Diviz' | 'D':
+    case '/' | 'Division' | 'Divisão' | 'Diviz' | 'D+':
 
       if y != 0:
 
@@ -76,12 +76,12 @@ while True:
      print(int(y)*(int(y)+1)/2)
      print('Reiniciando...')
 
-    case '=' | 'Equal' | 'Igual' | 'E' | 'I':
+    case '=' | 'Equal' | 'Igual' | 'E+' | 'I':
 
      print(x==y)
      print('Reiniciando...')
 
-    case 'Diferença' | 'DIferente' | 'Diff' | 'D':
+    case '!=' | 'Diferença' | 'DIferente' | 'Diff' | 'D':
 
      print(x!=y)
      print('Reiniciando...')
