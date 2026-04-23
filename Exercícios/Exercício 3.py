@@ -1,12 +1,24 @@
 import math as m
 
+def Op():
+ print ('Available Ops: +,-,*,/, ^, Root, !, ?, =, Diff')
+ Op = input(f'\nQual operação? ').capitalize().strip()
+ try:
+  x = float(input(f'Primeiro valor? ').strip())
+ except ValueError:
+  print('Erro 1: Número inválido.')
+  return
+ 
+ y = None
+ if Op in ('+','Add','Mais','A','M+','-','Minus','Menos','M-','*','Multiplicação','Multiplication','Multi','M','/','Divisão','Division','Diviz','D+','^','Exponenciação','Exponente','Power','Ex','P','=','Equal','Igual','E+','I','!=','Diferença','Diferente','Diff','D'):
+
+  try:
+   y = float(input(f'Segundo valor? ').strip())
+  except ValueError:
+   print('Erro 1: Número inválido.')
+  return
+
 while True:
-
- x = float(input(f'Primeiro valor? (Se aplica a operações como Fatorial e Termial.) ').strip())
-
- y = float(input(f'Segundo valor? (Não se aplica a operações como Fatorial e Termial.) ').strip())
-
- Op = input(f'Qual operação? (+,-,*,/, ^, Root, !, ?, =, Diff) ').capitalize().strip()
 
  match Op:
 
@@ -25,7 +37,7 @@ while True:
      print(x*y)
      print('Reiniciando...')
 
-    case '/' | 'Division' | 'Divisão' | 'Diviz' | 'D+':
+    case '/' | 'Divisão' | 'Division' | 'Diviz' | 'D+':
 
       if y != 0:
 
@@ -34,7 +46,7 @@ while True:
 
       else:
 
-        print(f'Erro 1: Divisão por zero é impossível.')
+        print(f'Erro 2: Divisão por zero é impossível.')
         print('Reiniciando...')
 
     case '^' | 'Exponenciação' | 'Exponente' | 'Power' | 'Ex' | 'P':
@@ -45,7 +57,6 @@ while True:
     case 'R' | 'Root' | 'Raiz':
 
      print(m.sqrt(int(x)))
-     print(m.sqrt(int(y)))
      print('Reiniciando...')
 
     case '!' | 'Factorial' | 'Fatorial' | 'F':
@@ -57,17 +68,7 @@ while True:
 
      else:
      
-      print(f'Erro 2: Fatorial de números negativos é impossível.')
-      print('Reiniciando...')
-
-     if y >= 0:
-       
-      print(m.factorial(int(y)))
-      print('Reiniciando...')
-
-     else:
-      
-      print(f'Erro 2: Fatorial de números negativos é impossível.')
+      print(f'Erro 3: Fatorial de números negativos é impossível.')
       print('Reiniciando...')
 
     case '?' | 'Termial' | 'T':
@@ -93,5 +94,5 @@ while True:
 
     case _:
 
-     print(f'Erro 3: Operação inválida e/ou indisponível.')
+     print(f'Erro 4: Operação inválida e/ou indisponível.')
      print('Reiniciando...')
