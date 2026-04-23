@@ -1,10 +1,13 @@
 import math as m
 
+def Triangle_Number(x):
+ return (int(x)*(int(x)+1))//2
+
 def Op():
- print ('Available Ops: +,-,*,/, ^, Root, !, ?, =, Diff')
- Op = input(f'\nQual operação? ').capitalize().strip()
+ print ('Operações disponíveis: +,-,*,/, ^, Root, !, ?, =, Diff')
+ Op = input('\nQual operação? ').capitalize().strip()
  try:
-  x = float(input(f'Primeiro valor? ').strip())
+  x = float(input('\nPrimeiro valor? ').strip())
  except ValueError:
   print('Erro 1: Número inválido.')
   return
@@ -13,86 +16,85 @@ def Op():
  if Op in ('+','Add','Mais','A','M+','-','Minus','Menos','M-','*','Multiplicação','Multiplication','Multi','M','/','Divisão','Division','Diviz','D+','^','Exponenciação','Exponente','Power','Ex','P','=','Equal','Igual','E+','I','!=','Diferença','Diferente','Diff','D'):
 
   try:
-   y = float(input(f'Segundo valor? ').strip())
+   y = float(input('\nSegundo valor? ').strip())
   except ValueError:
    print('Erro 1: Número inválido.')
   return
-
-while True:
 
  match Op:
 
     case '+' | 'Add' | 'Mais' | 'A' | 'M+':
 
       print(x+y)
-      print('Reiniciando...')
+      return
 
     case '-' | 'Minus' | 'Menos' | 'M-':
 
       print(x-y)
-      print('Reiniciando...')
+      return
 
-    case '*' | 'Multiplicação' | 'Multiplication' | 'Multi' | 'M':
+    case '*' | 'Multiplicação' | 'Multiplicacao' | 'Multiplication' | 'Multi' | 'M':
 
      print(x*y)
-     print('Reiniciando...')
+     return
 
-    case '/' | 'Divisão' | 'Division' | 'Diviz' | 'D+':
+    case '/' | 'Divisão' | 'Divisao' | 'Division' | 'Diviz' | 'D+':
 
       if y != 0:
 
         print(x/y)
-        print('Reiniciando...')
+        return
 
       else:
 
-        print(f'Erro 2: Divisão por zero é impossível.')
-        print('Reiniciando...')
+        print('Erro 2: Divisão por zero é impossível.')
+        return
 
-    case '^' | 'Exponenciação' | 'Exponente' | 'Power' | 'Ex' | 'P':
+    case '^' | 'Exponenciação' | 'Exponenciacao' | 'Exponente' | 'Power' | 'Ex' | 'P':
 
      print(x**y)
-     print('Reiniciando...')
+     return
 
-    case 'R' | 'Root' | 'Raiz':
+    case 'R' | 'Root' | 'Raíz' | 'Raiz':
 
      print(m.sqrt(int(x)))
-     print('Reiniciando...')
+     return
 
     case '!' | 'Factorial' | 'Fatorial' | 'F':
 
      if x >= 0:
 
       print(m.factorial(int(x)))
-      print('Reiniciando...')
+      return
 
      else:
      
-      print(f'Erro 3: Fatorial de números negativos é impossível.')
-      print('Reiniciando...')
+      print('Erro 3: Fatorial de números negativos é impossível.')
+      return
 
-    case '?' | 'Termial' | 'T':
+    case '?' | 'Triangle' | 'Termial' | 'T':
 
-     print(int(x)*(int(x)+1)/2)
-     print(int(y)*(int(y)+1)/2)
-     print('Reiniciando...')
+     print(Triangle_Number(x))
+     return
 
     case '=' | 'Equal' | 'Igual' | 'E+' | 'I':
 
      print(x==y)
-     print('Reiniciando...')
+     return
 
-    case '!=' | 'Diferença' | 'DIferente' | 'Diff' | 'D':
+    case '!=' | 'Diferença' | 'Diferenca' | 'DIferente' | 'Diff' | 'D':
 
      print(x!=y)
-     print('Reiniciando...')
-
-    case "Exit" | 'Sair' | 'E' | 'S':
-   
-     print(f'Encerrando...')
-     break
+     return
 
     case _:
 
-     print(f'Erro 4: Operação inválida e/ou indisponível.')
-     print('Reiniciando...')
+     print('Erro 4: Operação inválida e/ou indisponível.')
+     return
+
+while True:
+ Op()
+ Again = input('\nReiniciar? (Y/N): ').strip().upper()
+ if Again != 'Y':
+  print('Tchau!')
+  break
