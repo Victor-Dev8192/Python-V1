@@ -4,8 +4,7 @@ def Triangle_Number(x):
  return (int(x)*(int(x)+1))//2
 
 def Op():
- print ('Operações disponíveis: +,-,*,/, ^, Root, !, ?, =, Diff')
- Op = input('\nQual operação? ').capitalize().strip()
+ Op = input('Lista de operações abaixo:\n\n1) Adição.\n\n2) Subtração.\n\n3) Multiplicação.\n\n4) Divisão.\n\n5) Exponenciação.\n\n6) Raíz Quadrada.\n\n7) Fatorial.\n\n8) Termial\n\n9) Números Iguais.\n\n10) Números Diferentes.').capitalize().strip()
  try:
   x = float(input('\nPrimeiro valor? ').strip())
  except ValueError:
@@ -13,7 +12,7 @@ def Op():
   return
  
  y = None
- if Op in ('+','Add','Mais','A','M+','-','Minus','Menos','M-','*','Multiplicação','Multiplication','Multi','M','/','Divisão','Division','Diviz','D+','^','Exponenciação','Exponente','Power','Ex','P','=','Equal','Igual','E+','I','!=','Diferença','Diferente','Diff','D'):
+ if Op in ('1', '2', '3', '4', '5', '6','7','8','9'):
 
   try:
    y = float(input('\nSegundo valor? ').strip())
@@ -23,22 +22,22 @@ def Op():
 
  match Op:
 
-    case '+' | 'Add' | 'Mais' | 'A' | 'M+':
+    case '1':
 
       print(x+y)
       return
 
-    case '-' | 'Minus' | 'Menos' | 'M-':
+    case '2':
 
       print(x-y)
       return
 
-    case '*' | 'Multiplicação' | 'Multiplicacao' | 'Multiplication' | 'Multi' | 'M':
+    case '3':
 
      print(x*y)
      return
 
-    case '/' | 'Divisão' | 'Divisao' | 'Division' | 'Diviz' | 'D+':
+    case '4':
 
       if y != 0:
 
@@ -50,17 +49,17 @@ def Op():
         print('Erro 2: Divisão por zero é impossível.')
         return
 
-    case '^' | 'Exponenciação' | 'Exponenciacao' | 'Exponente' | 'Power' | 'Ex' | 'P':
+    case '5':
 
      print(x**y)
      return
 
-    case 'R' | 'Root' | 'Raíz' | 'Raiz':
+    case '6':
 
      print(m.sqrt(int(x)))
      return
 
-    case '!' | 'Factorial' | 'Fatorial' | 'F':
+    case '7':
 
      if x >= 0:
 
@@ -72,17 +71,17 @@ def Op():
       print('Erro 3: Fatorial de números negativos é impossível.')
       return
 
-    case '?' | 'Triangle' | 'Termial' | 'T':
+    case '8':
 
      print(Triangle_Number(x))
      return
 
-    case '=' | 'Equal' | 'Igual' | 'E+' | 'I':
+    case '9':
 
      print(x==y)
      return
 
-    case '!=' | 'Diferença' | 'Diferenca' | 'DIferente' | 'Diff' | 'D':
+    case '10':
 
      print(x!=y)
      return
