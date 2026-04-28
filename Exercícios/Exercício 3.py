@@ -24,24 +24,24 @@ def Op():
 
     case '1':
 
-      print('\n', x+y)
+      Resultado = ('\n', x+y)
       return
 
     case '2':
 
-      print('\n', x-y)
+      Resultado = ('\n', x-y)
       return
 
     case '3':
 
-     print('\n', x*y)
+     Resultado = ('\n', x*y)
      return
 
     case '4':
 
       if y != 0:
 
-        print('\n', x/y)
+        Resultado = ('\n', x/y)
         return
 
       else:
@@ -51,19 +51,19 @@ def Op():
 
     case '5':
 
-     print('\n', x**y)
+     Resultado = ('\n', x**y)
      return
 
     case '6':
 
-     print('\n', m.sqrt(int(x)))
+     Resultado = ('\n', m.sqrt(int(x)))
      return
 
     case '7':
 
      if x >= 0:
 
-      print('\n', m.factorial(int(x)))
+      Resultado = ('\n', m.factorial(int(x)))
       return
 
      else:
@@ -73,17 +73,17 @@ def Op():
 
     case '8':
 
-     print('\n', Triangle_Number(x))
+     Resultado = ('\n', Triangle_Number(x))
      return
 
     case '9':
 
-     print('\n', x==y)
+     Resultado = ('\n', x==y)
      return
 
     case '10':
 
-     print('\n', x!=y)
+     Resultado = ('\n', x!=y)
      return
 
     case _:
