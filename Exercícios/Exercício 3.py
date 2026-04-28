@@ -4,7 +4,7 @@ def Triangle_Number(x):
  return (int(x)*(int(x)+1))//2
 
 def Op():
- Op = input('Lista de operações abaixo:\n\n1) Adição.\n\n2) Subtração.\n\n3) Multiplicação.\n\n4) Divisão.\n\n5) Exponenciação.\n\n6) Raíz Quadrada.\n\n7) Fatorial.\n\n8) Termial\n\n9) Números Iguais.\n\n10) Números Diferentes.').capitalize().strip()
+ Op = input('Lista de operações abaixo:\n\n1) Adição.\n\n2) Subtração.\n\n3) Multiplicação.\n\n4) Divisão.\n\n5) Exponenciação.\n\n6) Raíz Quadrada.\n\n7) Fatorial.\n\n8) Termial\n\n9) Números Iguais.\n\n10) Números Diferentes.\n\n').capitalize().strip()
  try:
   x = float(input('\nPrimeiro valor? ').strip())
  except ValueError:
@@ -12,7 +12,7 @@ def Op():
   return
  
  y = None
- if Op in ('1', '2', '3', '4', '5', '6','7','8','9'):
+ if Op in ('1', '2', '3', '4', '5','9','10'):
 
   try:
    y = float(input('\nSegundo valor? ').strip())
