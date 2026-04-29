@@ -30,84 +30,84 @@ def Op():
 
  match Op:
 
-    case '1':
+  case '1':
 
-      Resultado = (x+y)
+    Resultado = (x+y)
+    print('\n' + Number_Format(Resultado))
+    return
+
+  case '2':
+
+    Resultado = (x-y)
+    print('\n' + Number_Format(Resultado))
+    return
+
+  case '3':
+
+   Resultado = (x*y)
+   print('\n' + Number_Format(Resultado))
+   return
+
+  case '4':
+
+    if y != 0:
+
+      Resultado = (x/y)
       print('\n' + Number_Format(Resultado))
       return
 
-    case '2':
+    else:
 
-      Resultado = (x-y)
-      print('\n' + Number_Format(Resultado))
+      print('\nErro 2: Divisão por zero é impossível.')
       return
 
-    case '3':
+  case '5':
 
-     Resultado = (x*y)
-     print('\n' + Number_Format(Resultado))
-     return
+   Resultado = (x**y)
+   print('\n' + Number_Format(Resultado))
+   return
 
-    case '4':
+  case '6':
 
-      if y != 0:
+   Resultado = (m.sqrt(int(x)))
+   print('\n' + Number_Format(Resultado))
+   return
 
-        Resultado = (x/y)
-        print('\n' + Number_Format(Resultado))
-        return
+  case '7':
 
-      else:
+   if x >= 0:
 
-        print('\nErro 2: Divisão por zero é impossível.')
-        return
+    Resultado = (m.factorial(int(x)))
+    print('\n' + Number_Format(Resultado))
+    return
 
-    case '5':
-
-     Resultado = (x**y)
-     print('\n' + Number_Format(Resultado))
-     return
-
-    case '6':
-
-     Resultado = (m.sqrt(int(x)))
-     print('\n' + Number_Format(Resultado))
-     return
-
-    case '7':
-
-     if x >= 0:
-
-      Resultado = (m.factorial(int(x)))
-      print('\n' + Number_Format(Resultado))
-      return
-
-     else:
+   else:
      
-      print('\nErro 3: Fatorial de números negativos é impossível.')
-      return
+    print('\nErro 3: Fatorial de números negativos é impossível.')
+    return
 
-    case '8':
+  case '8':
 
-     Resultado = (Triangle_Number(x))
-     print('\n' + Number_Format(Resultado))
-     return
+   Resultado = (Triangle_Number(x))
+   print('\n' + Number_Format(Resultado))
+   return
 
-    case '9':
+  case '9':
 
-     Resultado = (x==y)
-     print('\n' + Number_Format(Resultado))
-     return
+   Resultado = (x==y)
+   print('\n' + Number_Format(Resultado))
+   return
 
-    case '10':
+  case '10':
 
-     Resultado = (x!=y)
-     print('\n' + Number_Format(Resultado))
-     return
+   Resultado = (x!=y)
+   print('\n' + Number_Format(Resultado))
+   return
 
-    case _:
+  case _:
 
-     print('\nErro 4: Operação inválida e/ou indisponível.')
-     return
+   print('\nErro 4: Operação inválida e/ou indisponível.')
+   return
 
 while True:
  Op()
