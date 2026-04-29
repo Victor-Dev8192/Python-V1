@@ -4,7 +4,7 @@ def Triangle_Number(x):
  return (int(x)*(int(x)+1))//2
 
 def Op():
- Op = input('Lista de operações abaixo:\n\n1) Adição.\n\n2) Subtração.\n\n3) Multiplicação.\n\n4) Divisão.\n\n5) Exponenciação.\n\n6) Raíz Quadrada.\n\n7) Fatorial.\n\n8) Termial\n\n9) Números Iguais.\n\n10) Números Diferentes.\n\nOperação Escolhida = ').capitalize().strip()
+ Op = input('Lista de operações abaixo:\n\n1) Adição.\n\n2) Subtração.\n\n3) Multiplicação.\n\n4) Divisão.\n\n5) Exponenciação.\n\n6) Raíz Quadrada.\n\n7) Fatorial.\n\n8) Termial\n\n9) Números Iguais.\n\n10) Números Diferentes.\n\nOperação Escolhida = ').strip()
  try:
   x = float(input('\nPrimeiro valor? ').strip())
  except ValueError:
@@ -24,24 +24,24 @@ def Op():
 
     case '1':
 
-      Resultado = ('\n', x+y)
+      Resultado = (x+y)
       return
 
     case '2':
 
-      Resultado = ('\n', x-y)
+      Resultado = (x-y)
       return
 
     case '3':
 
-     Resultado = ('\n', x*y)
+     Resultado = (x*y)
      return
 
     case '4':
 
       if y != 0:
 
-        Resultado = ('\n', x/y)
+        Resultado = (x/y)
         return
 
       else:
@@ -51,19 +51,19 @@ def Op():
 
     case '5':
 
-     Resultado = ('\n', x**y)
+     Resultado = (x**y)
      return
 
     case '6':
 
-     Resultado = ('\n', m.sqrt(int(x)))
+     Resultado = (m.sqrt(int(x)))
      return
 
     case '7':
 
      if x >= 0:
 
-      Resultado = ('\n', m.factorial(int(x)))
+      Resultado = (m.factorial(int(x)))
       return
 
      else:
@@ -73,17 +73,17 @@ def Op():
 
     case '8':
 
-     Resultado = ('\n', Triangle_Number(x))
+     Resultado = (Triangle_Number(x))
      return
 
     case '9':
 
-     Resultado = ('\n', x==y)
+     Resultado = (x==y)
      return
 
     case '10':
 
-     Resultado = ('\n', x!=y)
+     Resultado = (x!=y)
      return
 
     case _:
