@@ -32,15 +32,15 @@ def Op():
 
   case '1':
 
-    Resultado = (x+y)
-    print('\n' + Number_Format(Resultado))
-    return
+   Resultado = (x+y)
+   print('\n' + Number_Format(Resultado))
+   return
 
   case '2':
 
-    Resultado = (x-y)
-    print('\n' + Number_Format(Resultado))
-    return
+   Resultado = (x-y)
+   print('\n' + Number_Format(Resultado))
+   return
 
   case '3':
 
@@ -52,14 +52,14 @@ def Op():
 
     if y != 0:
 
-      Resultado = (x/y)
-      print('\n' + Number_Format(Resultado))
-      return
+     Resultado = (x/y)
+     print('\n' + Number_Format(Resultado))
+     return
 
     else:
 
-      print('\nErro 2: Divisão por zero é impossível.')
-      return
+     print('\nErro 2: Divisão por zero é impossível.')
+     return
 
   case '5':
 
