@@ -95,13 +95,13 @@ def Op():
   case '9':
 
    Resultado = (x==y)
-   print('\n' + Number_Format(Resultado))
+   print('\n', Resultado)
    return
 
   case '10':
 
    Resultado = (x!=y)
-   print('\n' + Number_Format(Resultado))
+   print('\n', Resultado)
    return
 
   case _:
