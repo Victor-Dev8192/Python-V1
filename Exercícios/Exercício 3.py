@@ -69,7 +69,7 @@ def Op():
 
   case '6':
    
-   if x | y == ValueError:
+   if x or y == ValueError:
 
     print('\nErro 1: Número Inválido.')
   
@@ -81,7 +81,7 @@ def Op():
   
   case '7':
    
-   if x | y == ValueError:
+   if x or y == ValueError:
 
     print('\nErro 1: Número Inválido.')
    
