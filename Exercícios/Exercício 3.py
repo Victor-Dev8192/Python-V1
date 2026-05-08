@@ -58,7 +58,7 @@ def Op():
 
     else:
 
-     print('\nErro 2: Divisão por zero é impossível.')
+     print('\nErro 2: Divisão Por Zero É Impossível.')
      return
 
   case '5':
@@ -68,15 +68,28 @@ def Op():
    return
 
   case '6':
+   
+   if x | y == ValueError:
 
-   Resultado = (x**(1/y))
-   print('\n' + Number_Format(Resultado))
-   return
+    print('\nErro 1: Número Inválido.')
+  
+   else:
+
+    Resultado = (x**(1/y))
+    print('\n' + Number_Format(Resultado))
+    return
   
   case '7':
-   Resultado = (m.log(x,y))
-   print('\n' + Number_Format(Resultado))
-   return
+   
+   if x | y == ValueError:
+
+    print('\nErro 1: Número Inválido.')
+   
+   else:
+
+    Resultado = (m.log(x,y))
+    print('\n' + Number_Format(Resultado))
+    return
 
   case '8':
 
@@ -88,7 +101,7 @@ def Op():
 
    else:
      
-    print('\nErro 3: Fatorial de números negativos é impossível.')
+    print('\nErro 3: Fatorial De Números Negativos É Impossível.')
     return
 
   case '9':
@@ -111,7 +124,7 @@ def Op():
 
   case _:
 
-   print('\nErro 4: Operação inválida e/ou indisponível.')
+   print('\nErro 4: Operação Inválida E/Ou Indisponível.')
    return
 
 while True:
