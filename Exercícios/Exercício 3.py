@@ -12,7 +12,7 @@ def Number_Format(n):
  return f'{n:,.2f}'.rstrip('0').rstrip('.')
 
 def Op():
- Op = input('Lista de operações abaixo:\n\n1) Adição.\n\n2) Subtração.\n\n3) Multiplicação.\n\n4) Divisão.\n\n5) Exponenciação.\n\n6) Raíz Quadrada.\n\n7) Fatorial.\n\n8) Termial\n\n9) Números Iguais.\n\n10) Números Diferentes.\n\nOperação Escolhida = ').strip()
+ Op = input('Lista de operações abaixo:\n\n1) Adição.\n\n2) Subtração.\n\n3) Multiplicação.\n\n4) Divisão.\n\n5) Exponenciação.\n\n6) Raíz De Qualquer Base.\n\n7) Logaritmo De Qualquer Base.\n\n8) Fatorial.\n\n9) Termial\n\n10) Números Iguais.\n\n11) Números Diferentes.\n\nOperação Escolhida = ').strip()
  try:
   x = float(input('\nPrimeiro valor? ').strip())
  except ValueError:
@@ -20,7 +20,7 @@ def Op():
   return
  
  y = None
- if Op in ('1', '2', '3', '4', '5','9','10'):
+ if Op in ('1', '2', '3', '4', '5','6','7','10','11'):
 
   try:
    y = float(input('\nSegundo valor? ').strip())
@@ -69,11 +69,16 @@ def Op():
 
   case '6':
 
-   Resultado = (m.sqrt(int(x)))
+   Resultado = (x**(1/y))
+   print('\n' + Number_Format(Resultado))
+   return
+  
+  case '7':
+   Resultado = (m.log(x,y))
    print('\n' + Number_Format(Resultado))
    return
 
-  case '7':
+  case '8':
 
    if x >= 0:
 
@@ -86,19 +91,19 @@ def Op():
     print('\nErro 3: Fatorial de números negativos é impossível.')
     return
 
-  case '8':
+  case '9':
 
-   Resultado = (Triangle_Number(x))
+   Resultado = (Triangle_Number(int(x)))
    print('\n' + Number_Format(Resultado))
    return
 
-  case '9':
+  case '10':
 
    Resultado = (x==y)
    print('\n', Resultado)
    return
 
-  case '10':
+  case '11':
 
    Resultado = (x!=y)
    print('\n', Resultado)
