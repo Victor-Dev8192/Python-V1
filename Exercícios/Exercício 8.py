@@ -2,10 +2,10 @@ from math import hypot
 
 while True:
 
- CA = input (f'Valor do Cateto Adjacente: ').strip()
+ CA = input ('Valor do Cateto Adjacente: ').strip()
 
- CO = input (f'Valor do Cateto Oposto: ').strip()
+ CO = input ('Valor do Cateto Oposto: ').strip()
 
  H = hypot (int(CA), (int(CO)))
 
- print('Hipotenusa = {:.2f}'.format(H))
+ print(f'Hipotenusa = {H:.2f}')

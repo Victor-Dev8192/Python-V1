@@ -4,5 +4,5 @@ while True:
  
  F = C*(9/5)+32
  
- print('Temperatura em Fahrenheit = {:.2f}'.format(F))
+ print(f'Temperatura em Fahrenheit = {F:.2f}')
  print('Reiniciando...')

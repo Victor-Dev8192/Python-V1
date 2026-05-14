@@ -12,5 +12,5 @@ while True:
 
  p3 = a*2.125
 
- print('1 demão = {:.2f}L/m² | 2 demãos = {:.2f}L/m² | 3 demãos = {:.2f}L/m²'.format(p1, p2, p3))
+ print(f'1 demão = {p1:.2f}L/m² | 2 demãos = {p2:.2f}L/m² | 3 demãos = {p3:.2f}L/m²')
  print('Reiniciando...')

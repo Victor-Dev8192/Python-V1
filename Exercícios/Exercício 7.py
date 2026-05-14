@@ -10,5 +10,5 @@ while True:
  
  RF = (RsD*D) + (RsKm*Km)
  
- print('Teste 3 = {:.2f}'.format(RF))
+ print(f'Teste 3 = {RF:.2f}')
  print('Reiniciando...')
