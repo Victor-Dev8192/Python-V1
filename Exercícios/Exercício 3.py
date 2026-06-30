@@ -15,7 +15,7 @@ def Number_Format(n):
    return f'{n:,.2e}'
   
   else:
-   return f'{n:,.10f}'.rstrip('0')
+   return f'{n:,.10f}'.rstrip('0').rstrip('.')
 
 def Op():
  Op = input('Lista de operações abaixo:\n\n1) Adição.\n\n2) Subtração.\n\n3) Multiplicação.\n\n4) Divisão.\n\n5) Exponenciação.\n\n6) Raíz De Qualquer Base.\n\n7) Logaritmo De Qualquer Base.\n\n8) Fatorial.\n\n9) Termial\n\n10) Números Iguais.\n\n11) Números Diferentes.\n\nOperação Escolhida = ').strip()
@@ -75,26 +75,28 @@ def Op():
 
   case '6':
    
-   if int(x) | int(y) == 0:
-
-    print('\nErro 1: Número Inválido.')
-  
-   else:
+   try:
 
     Resultado = (x**(1/y))
     print('\n' + Number_Format(Resultado))
+   
+   except ValueError:
+
+    print('\nErro 1: Número Inválido.')
+
     return
   
   case '7':
    
-   if int(x) | int(y) == 0:
-
-    print('\nErro 1: Número Inválido.')
+   try:
    
-   else:
-
     Resultado = (m.log(x,y))
     print('\n' + Number_Format(Resultado))
+
+   except ValueError:
+
+    print('\nErro 1: Número Inválido.')
+
     return
 
   case '8':
