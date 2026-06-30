@@ -4,12 +4,18 @@ def Triangle_Number(x):
  return (int(x)*(int(x)+1))//2
 
 def Number_Format(n):
- if n == 0:
-  return '0'
+   
+  if n == 0:
+   return '0'
  
- if abs(n) >= 1e12 or abs(n) <= 1e-3:
-  return f'{n:.0e}'
- return f'{n:,.2f}'.rstrip('0').rstrip('.')
+  elif abs(n) >= 1e12:
+   return f'{n:.2e}'
+  
+  elif abs(n) <= 1e-3:
+   return f'{n:,.2e}'
+  
+  else:
+   return f'{n:,.10f}'.rstrip('0')
 
 def Op():
  Op = input('Lista de operações abaixo:\n\n1) Adição.\n\n2) Subtração.\n\n3) Multiplicação.\n\n4) Divisão.\n\n5) Exponenciação.\n\n6) Raíz De Qualquer Base.\n\n7) Logaritmo De Qualquer Base.\n\n8) Fatorial.\n\n9) Termial\n\n10) Números Iguais.\n\n11) Números Diferentes.\n\nOperação Escolhida = ').strip()
@@ -69,7 +75,7 @@ def Op():
 
   case '6':
    
-   if x or y == ValueError:
+   if int(x) | int(y) == 0:
 
     print('\nErro 1: Número Inválido.')
   
@@ -81,7 +87,7 @@ def Op():
   
   case '7':
    
-   if x or y == ValueError:
+   if int(x) | int(y) == 0:
 
     print('\nErro 1: Número Inválido.')
    
