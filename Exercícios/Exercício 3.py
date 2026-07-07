@@ -18,7 +18,7 @@ def Number_Format(n):
    return f'{n:,.10f}'.rstrip('0').rstrip('.')
 
 def Op():
- Op = input('Lista de operações abaixo:\n\n1) Adição.\n\n2) Subtração.\n\n3) Multiplicação.\n\n4) Divisão.\n\n5) Exponenciação.\n\n6) Raíz De Qualquer Base.\n\n7) Logaritmo De Qualquer Base.\n\n8) Fatorial.\n\n9) Termial\n\n10) Números Iguais.\n\n11) Números Diferentes.\n\nOperação Escolhida = ').strip()
+ Op = input('Lista de operações abaixo:\n\n1) Adição.\n\n2) Subtração.\n\n3) Multiplicação.\n\n4) Divisão.\n\n5) Exponenciação.\n\n6) Raíz De Qualquer Base.\n\n7) Logaritmo De Qualquer Base.\n\n8) Fatorial.\n\n9) Termial\n\n10) Números Iguais.\n\n11) Números Diferentes.\n\nOperação Escolhida = ').strip()[0]
  try:
   x = float(input('\nPrimeiro valor? ').strip())
  except ValueError:
@@ -138,7 +138,6 @@ def Op():
 while True:
  Op()
  print()
- Again = input('Reiniciar? (S/N): ').upper().strip()
+ Again = input('Reiniciar? (S/N): ').upper().strip()[0]
  if Again != 'S':
   print('\nTchau!\n')
-  break
