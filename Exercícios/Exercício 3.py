@@ -138,7 +138,7 @@ def Op():
 while True:
  Op()
  print()
- Again = input('Reiniciar? (Y/N): ').strip().upper()
- if Again != 'Y':
+ Again = input('Reiniciar? (S/N): ').strip().upper()
+ if Again != 'S':
   print('\nTchau!\n')
   break
