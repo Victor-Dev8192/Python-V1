@@ -141,3 +141,4 @@ while True:
  Again = input('Reiniciar? (S/N): ').upper().strip()[0]
  if Again != 'S':
   print('\nTchau!\n')
+  break
